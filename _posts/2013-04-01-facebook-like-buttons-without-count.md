@@ -3,6 +3,7 @@ layout: post
 title:  "Facebook LIKE buttons without the count"
 date:   2013-04-01 00:22:00 -0700
 summary: "Facebook seems to really want you to show the number of LIKEs whenever you use one of their buttons on your site. Here's a good hack around that..."
+redirect_from: "/posts/2013/04/01/facebook-like-buttons-without-count/"
 ---
 ![Facebook Like Button](/content/images/facebook-like-button.jpg)
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Spring MVC Mapped Interceptors"
 date:   2013-07-15 22:38:00 -0700
 summary: "Spring MVC 3.2 adds the ability to exclude certain request interceptors from running based off the incoming request path. Here's how it works..."
+redirect_from: "/posts/2013/07/15/spring-mvc-mapped-interceptors/"
 ---
 Interceptors in Spring MVC are a great way to add logic that needs to execute for every request to your servlet. The nice thing is that you can have logic that executes BEFORE and/or AFTER the request is handled by your controller, which is done by overriding the preHandle and postHandle methods in the [HandlerInterceptor](http://static.springsource.org/spring/docs/3.2.x/javadoc-api/org/springframework/web/servlet/HandlerInterceptor.html) interface that Spring provides.
 

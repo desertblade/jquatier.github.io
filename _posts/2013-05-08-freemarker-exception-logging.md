@@ -3,6 +3,7 @@ layout: post
 title:  "Freemarker and Exception Logging"
 date:   2013-05-08 20:54:00 -0700
 summary: "Freemarker pushes a lot of information to the logs. Here's how to specify the logging framework it uses, or disable logging entirely..."
+redirect_from: "/posts/2013/05/08/freemarker-exception-logging/"
 ---
 Freemarker is a pretty nice templating language for Java-based servlets, especially if you are looking for an alternative to JSP pages. One problem with it, or "feature" I should say, is that it puts a pretty large stack trace in your logs whenever it encounters an error rendering a template. In my travels, I've seen a single missing null-check fill up server logs rather quickly for pages that are hit often (especially if there is looping going on in the template). I decided it wasn't really helping me at all to have these in the logs, so I wanted to turn them off, at least on the live site.
 

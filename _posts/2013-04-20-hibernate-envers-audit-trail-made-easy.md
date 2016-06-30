@@ -3,6 +3,7 @@ layout: post
 title:  "Hibernate Envers - Audit Logging Made Easy"
 date:   2013-04-20 22:26:00 -0700
 summary: "Need to keep a detailed audit trail for your database entities? Hibernate Envers is the way to go!"
+redirect_from: "/posts/2013/04/20/hibernate-envers-audit-logging-made-easy/"
 ---
 One of the requirements for my most recent project was to provide a detailed audit trail for any changes made to my database entities through the administration panel. I needed to keep track of what was changed (at a field level) and who made the change. There are a ton of ways to do this, including triggers, plain old system logging, and homebrew audit tables. But, I decided to look around for something cooler than that. Enter Hibernate Envers. What's nice about it is configuration is basically a one-liner (for the most part), and it plays nice with my existing all-annotations JPA2 Spring MVC project. All you need to do is mark your entities with the @Audited annotation, and it takes care of the rest for you. Here's an example:
 
