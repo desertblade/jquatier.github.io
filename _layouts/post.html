@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article id="content" class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <h1 class="entry-title" itemprop="name headline">
+      <a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="bookmark"
+         title="Permalink to {{ page.title }}">{{ page.title }}</a></h1>
+  <div class="post-info">
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+  </div>
+  <div class="entry-content entry-content-page" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div id="content">
+  <ul id="post-list">
+    {% for post in site.posts limit:1 %}
+    <li class="post-list-item">
+      <div class="index-entry">
+        <h2 class="entry-title">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <div class="index-post-info">
+            <div class="published"> {{ post.date | date: "%Y-%m-%d %H:%M:%S" }} </div>
+        </div>
+        <div class="entry-content">{{ post.content }}</div>
+      </div>
+    </li>
+    {% endfor %}
+    <h3 class="prev-heading">previous posts ...</h3>
+    {% for post in site.posts offset:1 %}
+      <li class="post-list-item">
+        <div class="index-entry">
+          <h2 class="entry-title">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <div class="index-post-info">
+              <div class="published"> {{ post.date | date: "%Y-%m-%d %H:%M:%S" }} </div>
+          </div>
+          <div class="entry-summary">{{ post.summary }}</div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
