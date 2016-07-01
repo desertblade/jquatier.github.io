@@ -11,7 +11,7 @@ email:
 description: > # this means to ignore newlines until "baseurl:"
   I'm Jacob Quatier. I'm a software engineer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jquatier.github.io" # the base hostname & protocol for your site
+url: "http://www.jacobquatier.com" # the base hostname & protocol for your site
 permalink: /:title/
 # Build settings
 markdown: kramdown
