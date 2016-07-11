@@ -199,6 +199,10 @@ footer {
 	color:#999;
 }
 
+#disclaimer {
+	font-size: 8px;
+}
+
 .highlight .hll { background-color: #49483e }
 .highlight  {
 	background: #111;
